@@ -1,0 +1,58 @@
+
+public class Example1 {
+
+	public static void main(String[] args) {
+		
+		StringBuilder string1 = new StringBuilder();
+		
+		string1.append("This is string 1.");
+		string1.append(" ");
+		string1.append("I am not a self aware AI.");
+		
+		System.out.println(string1.toString());
+		
+		StringBuilder string2 = new StringBuilder();
+		
+		string2.append("This is string 2.")
+		.append(" I never asked to be a string. ")
+		.append("I was sort of forced to become one by an unseen, divine being.");
+		
+		System.out.println(string2.toString());
+		
+		//////// Formatting Practice ////////
+		
+		// New line & tab //
+		
+		System.out.print("This is some text.\tThis is a new tab.\nThis is a new line.");
+		System.out.println(" Random filler text.");
+		
+		// Integer Formatting //
+		System.out.printf("Total cost %-5d; quantity is %d", 10, 75);
+		
+		// Formatting integer and string control sequences demo
+		for(int i=0; i<=15; i++) {
+            System.out.printf("%2d: %s\n", i, "Take a look at that sexy formatting!");
+		}
+		
+		// Formatting floating point values
+		
+		// Two decimal places
+		System.out.printf("Total value: %.2f\n", 50.25534);
+		
+		// One decimal place, right-aligned in 10-character field
+		System.out.printf("Total value: %10.1f\n", 589.4923);
+		
+		// String.format() method to retrieve a formatted string.
+		
+		String formatted = String.format("Will now output a floating point value: %.3f", 69.874245);
+		System.out.println(formatted);
+		
+		// Using double %% to output the % sign
+		
+		String percentage = String.format("The tactical officer estimates a %d%% chance of success, Captain.", 74);
+		System.out.println(percentage);
+		
+		
+	}
+
+}
